@@ -19,7 +19,6 @@ import shutil
 
 
 def main():
-	alphabet = list("abcdefghijklmnopqrstuvwxyz")
 
 	# prompts the user to create a destination directory of lettered folders
 	print "Provide a name for a directory:"
@@ -28,11 +27,6 @@ def main():
 
 	# create a destination directory to hold all the letters in
 	os.mkdir(dst_dir_path)
-
-	# # creates a directory for every letter of the alphabet
-	# for letter in alphabet:
-	# 	new_dir_path = dst_dir_path + letter + "/"
-	# 	os.mkdir(new_dir_path)
 
 	# files directory that is getting sorted
 	src_dir_name = "./files/"
@@ -52,5 +46,6 @@ def main():
 			os.mkdir(dst_path)
 
 		shutil.move(src_path,dst_path)
+
 
 main()
