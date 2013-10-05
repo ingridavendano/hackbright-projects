@@ -5,6 +5,7 @@ Given list l, sort it in reverse order
 ie: 10, 9, 8, 7, 6
 """
 
+
 def reverse(l):
 	for i in range(len(l)/2):
 		tmp = l[i]
@@ -14,8 +15,12 @@ def reverse(l):
 	return l
 
 
-l = [5,2,1,5,9,10,11]
+def main():
+	l = [5,2,1,5,9,10,11]
 
-print "Before:",l
-reverse(l)
-print "After:",l
+	print "Before:",l
+	reverse(l)
+	print "After:",l
+
+
+main()
